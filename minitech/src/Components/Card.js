@@ -10,7 +10,7 @@ function Card(props) {
         <img  className='image-container' src={props.image} alt='Southfood image'/>
            <h3 className='card-title'> {props.title} </h3>
            <p className='one' >Rs {props.price}</p>
-            <button className='btn' onClick={() => {console.log('clicked'); addItem(props.item)}}><span>Add to Cart</span></button>
+            <button className='btn' onClick={() => {console.log('clicked'); addItem(props.item) ; alert('Item added to Cart')}}><span>Add to Plate</span></button>
     </div>
   )
 }

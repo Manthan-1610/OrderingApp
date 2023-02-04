@@ -13,7 +13,6 @@ import sprite from '../images/sprite.png'
 import fanta from '../images/fanta.png'
 import maaza from '../images/maaza.jpg'
 import redbull from '../images/redbull.png'
-import mountaindew from '../images/mountaindew.jpg'
 
 
 const data={
@@ -106,12 +105,6 @@ const data={
             id:15,
             image:redbull,
             title: 'RedBull',
-            price:70,
-        },
-        {
-            id:16,
-            image:mountaindew,
-            title: 'Mountain Dew',
             price:70,
         }
 

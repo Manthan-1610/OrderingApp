@@ -11,6 +11,9 @@ import {onAuthStateChanged} from 'firebase/auth'
 import PrivateRoute from './PrivateRoute'
 import {Navigate} from 'react-router-dom'
 import Main from './Main'
+import Cart from './Components/Cart';
+import { CartProvider } from 'react-use-cart';
+import GooglePay from './GooglePay';
 
 function App() {
 
@@ -24,6 +27,7 @@ function App() {
   }, [])
 
   return (
+    <CartProvider>
     <Router>
       <AuthProvider value={{currentUser, timeActive, setTimeActive}}>
         <Routes>
@@ -44,9 +48,11 @@ function App() {
             ' replace/>
           } />
           <Route path='/verify-email' element={<VerifyEmail/>} /> 
+          <Route path='/Cart' element={<Cart/>} /> 
         </Routes>  
       </AuthProvider>
   </Router>
+  </CartProvider>
   );
 }
 
