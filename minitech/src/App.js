@@ -14,6 +14,7 @@ import Main from './Main'
 import Cart from './Components/Cart';
 import { CartProvider } from 'react-use-cart';
 import GooglePay from './GooglePay';
+import HomeScreen from './Components/HomeScreen';
 
 
 function App() {

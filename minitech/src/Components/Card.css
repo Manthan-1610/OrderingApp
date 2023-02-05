@@ -9,9 +9,13 @@
     overflow: hidden;
     object-fit: cover;
     display: block;
+    background-color: white;
+    
+
 }
 .card-container:hover{
     transform: scale(1.1);
+    
 }
 .one{
     display: inline;
@@ -29,11 +33,13 @@
 }
 .Homescreen-container{
     display: flex;
+    
 }
 .Homescreen-container1{
     display: flex;
     object-fit: cover;
     aspect-ratio: 3/2;
+    background-color: white;
 }
 
 .btn{

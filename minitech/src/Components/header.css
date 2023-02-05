@@ -10,9 +10,10 @@
     margin-left: 30px;
     margin-top: 7px;
 }
-.text{
-    margin-right: 950px;
-}
+
 .first{
     display:inline-block;
+}
+.txt1{
+    margin-left: 900px;
 }

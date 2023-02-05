@@ -2,8 +2,10 @@ import React from "react";
 import { useCart } from "react-use-cart";
 import GooglePay from "../GooglePay";
 import './Card.css';
+import { useNavigate } from "react-router-dom";
 
 function Cart (){
+    const navigate = useNavigate()
     const {
         isEmpty,
         items,
@@ -13,7 +15,7 @@ function Cart (){
         removeItem,
         emptyCart,
     }=useCart();
-    if (isEmpty) return <h1 className="text-left">Your cart is empty</h1>
+    if (isEmpty) return <div><h1 className="text-left">Your cart is empty</h1> <button onClick={() => navigate("/")} >Back to home screen</button></div>
     console.log('clicked')
     return(
         <div className="colo">

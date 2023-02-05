@@ -42,7 +42,9 @@ function Login(){
     <div className='center' style={{
       marginLeft: '40%',
     }}>
-      <div className='auth' >
+      <div className='auth' style={{
+      height: '56%',
+    }} >
         <h1 color='#282828'>Log in</h1>
         {error && <div className='auth__error'>{error}</div>}
         <form onSubmit={login} name='login_form' className='f1'>
