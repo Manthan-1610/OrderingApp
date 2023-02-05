@@ -20,7 +20,6 @@ function HomeScreen() {
             
         }
     </div>
-    <p onClick={() => navigate("/Cart")}>Click me</p> 
     </div>
   )
 }

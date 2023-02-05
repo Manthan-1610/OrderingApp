@@ -35,12 +35,18 @@ function Login(){
   }
 
   return(
-    <div className='center'>
-      <div className='auth'>
-        <h1>Log in</h1>
+  <div className='a1'>
+  
+  
+   <div>
+    <div className='center' style={{
+      marginLeft: '40%',
+    }}>
+      <div className='auth' >
+        <h1 color='#282828'>Log in</h1>
         {error && <div className='auth__error'>{error}</div>}
-        <form onSubmit={login} name='login_form'>
-          <input 
+        <form onSubmit={login} name='login_form' className='f1'>
+          <input className='i1' 
             type='email' 
             value={email}
             required
@@ -48,20 +54,23 @@ function Login(){
             autoComplete='true'
             onChange={e => setEmail(e.target.value)}/>
 
-          <input 
+          <input className='i1' 
             type='password'
             value={password}
             required
             placeholder='Enter your password'
             onChange={e => setPassword(e.target.value)}/>
 
-          <button type='submit' >Login</button>
-        </form>
-        <p>
+          <button className='i2' type='submit' >Login</button>
+          <p style={{fontSize:15}}>
           Don't have and account? 
           <Link to='/register'>Create one here</Link>
         </p>
+        </form>
+        
       </div>
+    </div>
+    </div>
     </div>
   )
 }

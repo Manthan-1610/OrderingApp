@@ -1,0 +1,18 @@
+.nav-container{
+    font-size: 25px;
+    font-weight: bold;
+}
+.text1{
+    margin-left: 40px;
+    font-weight: bold;
+}
+.text2{
+    margin-left: 30px;
+    margin-top: 7px;
+}
+.text{
+    margin-right: 950px;
+}
+.first{
+    display:inline-block;
+}

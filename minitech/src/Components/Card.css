@@ -40,3 +40,38 @@
     justify-content: center;
     
 }
+.first{
+    margin-bottom: 30%;
+    background-color: white;
+    width:70%;
+    border-radius: 5%;
+    box-shadow:0px 0px 15px -5px;
+    overflow: hidden;
+    object-fit: cover;
+    gap:3px;
+}
+.button1{
+    margin-bottom: 20px;
+    margin-top: 20px;
+    padding: 5px;
+    align-items: center;
+    margin-right: 10px;
+    display: inline;
+    flex: 1;
+    width:fit-content;
+    justify-content: center;
+}
+.text{
+    display: inline;
+   
+}
+.clear{
+    align-items: center;
+    margin-left: 45%;
+    margin-bottom: 2%;
+}
+.colo{
+    background-color: #F9F5E7;
+    background-size: cover;
+    height:100vh;
+}

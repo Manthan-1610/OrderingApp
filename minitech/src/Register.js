@@ -46,39 +46,44 @@ function Register() {
   }
 
   return (
-    <div className='center'>
-      <div className='auth'>
+    <div className='a2'>
+    <div className='center' style={{
+      marginLeft: '40%',
+    }}>
+      <div className='auth' style={{height:425}}>
         <h1>Register</h1>
         {error && <div className='auth__error'>{error}</div>}
-        <form onSubmit={register} name='registration_form'>
-          <input 
+        <form onSubmit={register} name='registration_form' className='f2'>
+          <input className='i3'
             type='email' 
             value={email}
             placeholder="Enter your email"
             required
             onChange={e => setEmail(e.target.value)}/>
 
-          <input 
+          <input className='i3'
             type='password'
             value={password} 
             required
             placeholder='Enter your password'
             onChange={e => setPassword(e.target.value)}/>
 
-            <input 
+            <input className='i3'
             type='password'
             value={confirmPassword} 
             required
             placeholder='Confirm password'
             onChange={e => setConfirmPassword(e.target.value)}/>
 
-          <button type='submit'>Register</button>
-        </form>
-        <span>
+          <button className='i4' type='submit'>Register</button>
+          <span>
           Already have an account?  
           <Link to='/login'>login</Link>
         </span>
+        </form>
+        
       </div>
+    </div>
     </div>
   )
 }

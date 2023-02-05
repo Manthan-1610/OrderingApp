@@ -1,41 +1,26 @@
 import React from 'react'
+import './header.css';
+import { useNavigate } from 'react-router-dom';
+
 
 function Navbar() {
+  const navigate = useNavigate()
   return (
-    <nav className="navbar navbar-expand-xl spacing navbar-light bg-light">
-  <a className="" href="#">MiniTech</a>
-  <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-    <span className="navbar-toggler-icon"></span>
-  </button>
-
-  <div className="collapse navbar-collapse" id="navbarSupportedContent">
+    <nav className="navbar navbar-expand-xl spacing navbar-light bg-light nav-container">
+  <a className="text1" href="#">MiniTech</a>
+  <div className="navbar-collapse" id="navbarSupportedContent">
     <ul className="navbar-nav justify-content-between w-75">
       <li className="nav-item active">
-        <a className="nav-link" href="#">Home <span className="sr-only">(current)</span></a>
+        <a className="nav-link text2" href="#">Home </a>
       </li>
-     
       <li className="nav-item">
-        <a className="nav-link" href="#">Link</a>
+        <a className="nav-link text2 text active" href="#">Rewards</a>
       </li>
-      <li classNameName="nav-item dropdown">
-        <a className="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          Profile
-        </a>
-        <div className="dropdown-menu" aria-labelledby="navbarDropdown">
-          <a className="dropdown-item" href="#">Settings</a>
-          <a className="dropdown-item" href="#">Credit rating</a>
-          <div className="dropdown-divider"></div>
-          <a className="dropdown-item" href="#">Sign out</a>
-        </div>
-      </li>
-      
- 
-      <li className="nav-item">
-        <a className="nav-link font-weight-bold" href="#drinks" > Drinks</a>
-      </li>
-
        <li className="nav-item active">
-        <a className="btn btn-outline my-2 my-sm-0 margin" href="#">🍽️ <span className="sr-only">(current)</span></a>
+        <a className="btn btn-outline mr-sm-2" onClick={() => navigate("/Cart")}><h1 className=" mr-sm-10">🍽️ </h1></a>
+      </li>
+      <li className="nav-item active">
+        <a className="btn btn-outline mr-sm-2" onClick={() => navigate("/Cart")}><h1 className=" mr-sm-20">🙍‍♂️</h1></a>
       </li>
     </ul>
     {/* <form className="form-inline my-2 my-lg-0">
